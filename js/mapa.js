@@ -9,7 +9,7 @@ L.tileLayer(`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`, {
 }).addTo(myMap);
 
 L.marker([OLa, OLo]).addTo(myMap)
-    .bindPopup('Sucursal de Tlahco LP')
+    .bindPopup('Sucursal Tlahco LS')
     .openPopup();
 
 let marker = L.marker([OLa, OLo,15]).addTo(myMap)
