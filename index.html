@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Tlahco</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container-xl border border-primary" id="container">
+        <!--NAVBAR-->
+        <div class="row" id="navbar">
+            <div class="col-2 border border-primary">
+                <img src="img/L-Tlahco.png" width="200" height="200" class="d-inline-block align-top" alt="Tlhaco">
+            </div>
+            <div class="col border-primary">
+
+            </div>
+
+        </div>
+
+
+        <!--carousel-->
+        <div class="col" id="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" id="carousel">
+                    <div class="carousel-item active">
+                        <img src="img/taco-C-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/taco-C-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/taco-C-3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+        <section class="row bg-warning">
+            <!--PRIMERAS DOS APIS-->
+            <div class="col bg-danger m-2">
+                <div id="myMap" style="height: 400px; margin: 10px;"></div>
+                <button id="MarcarGeo">Marca ruta</button>
+            </div>
+
+            <div class="col bg-danger m-2">
+                <div></div>
+                APISs
+            </div>
+        </section>
+
+        <section class="row" id="menu">
+            <!--MENU -->
+            <div class="col m-2">
+                Menu
+                <div class="row justify-content-around">
+                    <div class="pro col-sm-5 col-10 m-2">
+                        <div class="info">
+                            <h4>Tacos</h4>
+                            <ul>
+                                <li>Bisteck</li>
+                                <li>Longaniza</li>
+                                <li>Campechano</li>
+                                <li>Pastor</li>
+                                <li>Chuleta</li>
+                                <li>Chistorra</li>
+                                <li>Alambre</li>
+                            </ul>
+
+                        </div>
+                        <img src="img/M-taco.jpg">
+                    </div>
+
+                    <div class="pro col-sm-5 col-10 m-2">
+                        <div class="info">
+                            <h4>Volcanes</h4>
+                            <ul>
+                                <li>Bisteck</li>
+                                <li>Longaniza</li>
+                                <li>Campechano</li>
+                                <li>Pastor</li>
+                                <li>Chuleta</li>
+                                <li>Chistorra</li>
+                                <li>Alambre</li>
+                            </ul>
+                        </div>
+                        <img src="img/volcan.jpg">
+                    </div>
+
+                    <div class="pro col-sm-5 col-10 m-2">
+                        <div class="info">
+                            <h4>Gringas</h4>
+                            <ul>
+                                <li>Bisteck</li>
+                                <li>Longaniza</li>
+                                <li>Campechano</li>
+                                <li>Pastor</li>
+                                <li>Chuleta</li>
+                                <li>Chistorra</li>
+                                <li>Alambre</li>
+                            </ul>
+                        </div>
+                        <img src="img/gringa.jpg">
+                    </div>
+                    <div class="pro col-sm-5 col-10 m-2">
+                        <div class="info">
+                            <h4>Alitas</h4>
+                            <ul>
+                                <li>BBQ</li>
+                                <li>Maggi</li>
+                            </ul>
+                        </div>
+                        <img src="img/alitas.jpg">
+                    </div>
+                    <div class="pro col-sm-5 col-10 m-2">
+                        <div class="info">
+                            <h4>Alambre</h4>
+                        </div>
+                        <img src="img/alambre.jpg">
+                    </div>
+                    <div class="pro col-sm-5 col-10 m-2">
+                        <div class="info">
+                            <h4>Papa Asada</h4>
+                        </div>
+                        <img src="img/papa.jpg">
+                    </div>
+                    <div class="pro col-sm-5 col-10 m-2">
+                        <div class="info">
+                            <h4>Refrescos</h4>
+                            <ul>
+                                <li>Coca-Cola</li>
+                                <li>Sidral</li>
+                                <li>Fanta Fresa</li>
+                            </ul>
+                        </div>
+                        <img src="img/refrescos.jpg">
+
+                    </div>
+                    <div class="pro col-sm-5 col-10 m-2">
+                        <div class="info">
+                            <h4>Jugos</h4>
+                        </div>
+                        <img src="img/jugos.jpg">
+                    </div>
+                    <div class="pro col-sm-5 col-10 m-2">
+                        <div class="info">
+                            <h4>Agua de Sabor</h4>
+                        </div>
+                        <img src="img/aguas.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <!--SCRIPT API MAPAS-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="leaflet-routing/dist/leaflet-routing-machine.css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>  
+    <script src="js/mapa.js"></script>
+</body>
+
+</html>

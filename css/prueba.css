@@ -1,0 +1,32 @@
+/* Efecto Rectangular Inicio */
+.overlayone{ /* Propiedades de imagen */
+    margin:0px;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    padding: 0px;
+    width: 468px; /* medida ancho rectangulo */
+    height: 150px; /* medida alto rectangulo */
+    display: inline-block;
+    position: relative;
+    }
+    .overlayinn { /* Propiedades de la transparencia */
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 300px; /* ancho del contenedor de texto */
+    height: 140px; /* alto del contenedor de texto */
+    top: 25px; /*distancia hacia abajo*/
+    left: 60px; /*distancia hacia la derecha*/
+    opacity: 0; /* esta condicion mantiene el texto oculto */
+    position: absolute;
+    padding: 20px; /* espacio entre texto y bordes */
+    transition: opacity .5s;
+    text-align: center; /* texto centrado */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px; /* tamaño de letra */
+    color:#ffffff; /* color de texto */
+    }
+    .overlayinn:hover { /* Efecto al pasar el mouse */
+    opacity: 1;
+    transition: opacity .5s;
+    }
+    /* Efecto Rectangular final */
