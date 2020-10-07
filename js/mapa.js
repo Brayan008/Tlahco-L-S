@@ -3,12 +3,17 @@ var OLo = -100.742277321;
 
 let myMap = L.map('myMap').setView([OLa, OLo,15], 13)
 
-L.tileLayer(`https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png`, {
+L.tileLayer(`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`, {
   maxZoom: 18,
   atribución: '&copy;<ahref ="https://osm.org/copyright">colaboradores de OpenStreetMap</a>' 
 }).addTo(myMap);
 
+L.marker([OLa, OLo]).addTo(myMap)
+    .bindPopup('Sucursal de Tlahco LP')
+    .openPopup();
+
 let marker = L.marker([OLa, OLo,15]).addTo(myMap)
+
 
 
 let iconMarker = L.icon({
