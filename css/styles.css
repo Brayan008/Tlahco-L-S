@@ -1,31 +1,52 @@
+@font-face{
+    font-family: "mayan";
+    src: url("fonts/mayansquare.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 /*Generales*/
 *{
     padding: 0px;
     margin: 0px;
 }
 
-
-
-
 /*MENU*/
+#navbar #logo:hover{
+    transform: scale(1.1);
+    transition: all 300ms;
+}
+
+.pro .info{
+    width: 100%;
+}
+
+.pro .info h4{
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    font-family: "mayan";
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
 .pro{
     box-shadow: 0px 0px 5px #cccccc;
     padding: 0px;
-    background: linear-gradient(to right, rgb(248, 50, 50), rgb(255, 255, 42));
 }
 
 .pro:hover{
     transform: scale(1.1);
 }
 
-#menu .pro img{
+#menuTacos .pro img{
     border: 1px ;
     display: block;
     position: relative;
     width: 100%;
 }
 
-#menu .pro img:hover{
+#menuTacos .pro img:hover{
     opacity: 0.2;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
@@ -38,8 +59,155 @@
     position: absolute;
 }
 
-
 .pro li{
     list-style: none;
+}
 
+/*Navbar*/
+#menu {
+    margin: 0 auto;
+    margin-top: 50px;
+    }
+   
+  #menu ul  {
+    list-style: none;
+    margin: 0;
+    }
+   
+  #menu ul li {
+    margin: 0;
+    float: left;
+    }
+   
+  #menu ul li a {
+    font-family: "mayan";
+    margin:0 2px;
+    width: 180px;
+    font-size:1.5em;
+    text-align: center;
+    line-height: 40px;
+    display:block;
+    text-decoration: none
+    }
+   
+  #menu ul li a:hover {
+    color:rgb(255, 255, 255);
+    transition: all 600ms;
+    transform: scale(1.1);
+    }
+   
+  #item-uno a {
+    border-bottom:5px solid rgb(83, 4, 4);
+    color: rgb(83, 4, 4)
+    }
+   
+  #item-dos a {
+    border-bottom:5px solid rgb(83, 4, 4);
+    color: rgb(83, 4, 4)
+    }
+   
+  #item-tres a {
+    border-bottom:5px solid rgb(83, 4, 4);
+    color: rgb(83, 4, 4)
+    }
+   
+  #item-uno a:hover {
+    background:rgba(94, 5, 5, 0.705);
+    transition: all 600ms;
+    transform: scale(1.1);
+    }
+   
+  #item-dos a:hover {
+    background:rgba(94, 5, 5, 0.705);
+    transition: all 600ms;
+    transform: scale(1.1);
+    }
+   
+  #item-tres a:hover {
+    background:rgba(94, 5, 5, 0.705);
+    transition: all 600ms;
+    transform: scale(1.1);
+    }
+   
+/*BOTON CARRITO*/
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.button {
+  min-width: 100px;
+  min-height: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: #ffffff;
+  background: rgb(94, 5, 5);
+background: linear-gradient(90deg, rgb(94, 4, 4) 0%, rgb(145, 6, 6) 100%);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(165, 5, 5, 0.705);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.button::before {
+content: '';
+  border-radius: 10px;
+  min-width: 100px;
+  min-height: 60px;
+  box-shadow: 0 0 60px rgba(129, 2, 2, 0.705);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #ffffff;
+  transform: translateY(-6px);
+}
+
+.button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+.button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 3px solid rgba(63, 2, 2, 0.705);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+  }
 }
