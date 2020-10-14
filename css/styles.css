@@ -10,7 +10,7 @@
     margin: 0px;
 }
 
-/*MENU*/
+/*MENUTACOS*/
 #navbar #logo:hover{
     transform: scale(1.1);
     transition: all 300ms;
@@ -62,7 +62,53 @@
 .pro li{
     list-style: none;
 }
-
+/*SEPARADOR*/
+.txtSeparador{
+  text-align: center;
+  font-size: 30px;
+  color:#cccccc;
+}
+.trans--grow{
+  -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
+  transition: width 1s  ease-out;
+  width : 0%;
+}
+.grow{
+  width:100%;
+}
+.hr1{
+  margin-left:0;
+}
+.hr2{
+  margin-right:0;
+}
+hr{
+  margin-top: 10spx;
+  padding: 2px 0;
+  border: none;
+  background-color: rgb(83, 4, 4);
+  letter-spacing: 5px;
+}
+/*LISTA MENU TACOS*/
+#menuTacos #tituloMenu{
+text-align: center;
+font-family: "mayan";
+text-transform: uppercase;
+letter-spacing: 50px;
+font-size: 80px;
+text-shadow: 2px 4px 4px #a7a7a7;
+}
+#menuTacos .info ul{
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(37, 2, 2, 0.918);
+}
+#menuTacos .info ul li{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: white;
+}
 /*Navbar*/
 #menu {
     margin: 0 auto;
