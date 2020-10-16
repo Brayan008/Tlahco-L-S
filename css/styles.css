@@ -16,7 +16,18 @@
     transition: all 300ms;
 }
 
+.pro li{
+  list-style: none;
+}
+
+.pro{
+  box-shadow: 0px 0px 5px #cccccc;
+  padding: 0px;
+  overflow: hidden;
+}
+
 .pro .info{
+    position: absolute;
     width: 100%;
 }
 
@@ -30,14 +41,29 @@
     font-size: 50px;
 }
 
-.pro{
-    box-shadow: 0px 0px 5px #cccccc;
-    padding: 0px;
-}
-
 .pro:hover{
     transform: scale(1.1);
 }
+/*LISTA MENU TACOS*/
+#menuTacos #tituloMenu{
+  text-align: center;
+  font-family: "mayan";
+  text-transform: uppercase;
+  letter-spacing: 50px;
+  font-size: 80px;
+  text-shadow: 2px 4px 4px #a7a7a7;
+  }
+  #menuTacos .info ul{
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(37, 2, 2, 0.918);
+  }
+  #menuTacos .info ul li{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: white;
+  }
 
 #menuTacos .pro img{
     border: 1px ;
@@ -53,14 +79,6 @@
   -o-transition: opacity 500ms;
   -ms-transition: opacity 500ms;
   transition: opacity 500ms;
-}
-
-.pro .info{
-    position: absolute;
-}
-
-.pro li{
-    list-style: none;
 }
 /*SEPARADOR*/
 .txtSeparador{
@@ -89,26 +107,7 @@ hr{
   background-color: rgb(83, 4, 4);
   letter-spacing: 5px;
 }
-/*LISTA MENU TACOS*/
-#menuTacos #tituloMenu{
-text-align: center;
-font-family: "mayan";
-text-transform: uppercase;
-letter-spacing: 50px;
-font-size: 80px;
-text-shadow: 2px 4px 4px #a7a7a7;
-}
-#menuTacos .info ul{
-  margin: 0 auto;
-  text-align: center;
-  background-color: rgba(37, 2, 2, 0.918);
-}
-#menuTacos .info ul li{
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 20px;
-  color: white;
-}
+
 /*Navbar*/
 #menu {
     margin: 0 auto;
