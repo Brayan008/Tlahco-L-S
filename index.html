@@ -301,7 +301,16 @@
 
         </section>
         <hr class="trans--grow hr1">
+        <p class="txtSeparador">DISFRUTA NUESTRO STREAMINGS DE <strong>TLAHCO</strong></p>
         <!--SEPARAOR-->
+        <div class="row justify-content-around">
+            <div class="col-10 col-sm-10 col-lg-5 mb-4 bg-primary">
+                <div id="stream-mux"></div>
+            </div>
+
+        </div>
+        <hr class="trans--grow hr1">
+        <p class="txtSeparador">ENCUENTRA NUESTRAS SUCURSALES</p>
         <section class="row">
             <div class="col m-2">
                 <div id="myMap" style="height: 400px; margin: 10px;"></div>
@@ -315,8 +324,7 @@
         <br>
         <br>
     </div>
-    <div id="twitch-embed"></div>
-
+    
 
 
 
@@ -341,15 +349,9 @@
     </div>
     <!--Api de STREAMING-->
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script src="mux/twitch.js"></script>
 
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: "bmb008"
-      });
-    </script>
+
 </body>
 
 </html>
